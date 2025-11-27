@@ -22,7 +22,7 @@
 						<h1>Knoelle Grassi<br />
 						Portfolio</h1>
 						<p>A data analyst with a strong foundation in SQL, Python, and statistical analysis, turning complex data into clear insights and actionable decisions. <br />
-							 <a href=https://www.linkedin.com/in/knoelle-grassi-2a606b29a/>@KnoelleGrassi</a> </p>
+							 <a href=https://www.linkedin.com/in/knoelle-grassi-2a606b29a/ target="_blank">@KnoelleGrassi</a> </p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -30,7 +30,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Knoelle Grassi</a>
+						<a href="index.html" class="logo">Knoelle C. Grassi</a>
 					</header>
 
 				<!-- Nav -->
@@ -39,7 +39,7 @@
 							<li class="active"><a href="index.html">Projects</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/knoelle-grassi-2a606b29a/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.linkedin.com/in/knoelle-grassi-2a606b29a/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 						</ul>
 					</nav>
 
@@ -54,7 +54,7 @@
 								</header>
 								<a href="#" class="image main"><img src="images/kgrassi_photo.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="#" class="button large">View Resume</a></li>
+									<a href="KnoelleGrassi_Resume_Nov25.pdf" class="button large" target="_blank">View Resume</a>
 								</ul>
 							</article>
 
@@ -62,14 +62,199 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
+										<span class="date">April 15, 2025</span>
+										<h2><a href="Wildlife Data Warehouse Project.pdf" target = "_blank">Wildlife Species Spatiotemporal Analysis</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/wildlife.jfif" alt="" /></a>
+									<p>
+										This project designs and implements a complete wildlife conservation data warehouse integrating 
+										spatiotemporal species observations, environmental conditions, CITES trade records, and IUCN 
+										conservation history. I built the dimensional model, constructed transactional and snapshot fact 
+										tables, created ETL pipelines, and developed analytical marts supporting biodiversity research, 
+										species risk monitoring, and ecological trend reporting.
+									</p>
+									<h4>Tools & Skills Used</h4>
+									<ul>
+										<li><strong>Dimensional Modeling: </strong> scds, fact tables, surrogate keys
+										<li><strong>SQL: </strong> data modeling, etl pipelines, star schemas
+										<li><strong>Visualizations:</strong> scatterplots, boxplots, histograms, heatmaps, tableau</li>
+										<li><strong>Analysis:</strong> environmental, geographic, conservation</li>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="Wildlife Data Warehouse Project.pdf" class="button" target = "_blank">View Report</a></li>
+										<li><a href="WildlifeEDW.twb" class="button">Download Dashboards</a></li>
+									</ul>
+									<section class="gallery">
+										<h3>Dashboards & Visualizations</h3>
+									  
+										<div class="slider">
+										  <img src="images/Screenshot 2025-11-26 174825.png" alt="Dashboard Screenshot 1"/>
+										  <img src="images/Screenshot 2025-11-26 174854.png" alt="Dashboard Screenshot 2"/>
+										  <img src="images/Screenshot 2025-11-26 174913.png" alt="Dashboard Screenshot 3"/>
+										  <img src="images/Screenshot 2025-11-26 174940.png" alt="Dashboard Screenshot 4"/>
+										</div>
+									  
+										<button class="prev">&#10094; Prev</button>
+										<button class="next">Next &#10095;</button>
+									  </section>
+									  
+									  <style>
+										.gallery {
+										  text-align: center;
+										  max-width: 600px;
+										  margin: auto;
+										}
+									  
+										/* Hide all images by default */
+										.slider img {
+										  display: none;
+										  width: 100%;
+										  height: auto;
+										}
+									  
+										/* Show only the active image */
+										.slider img.active {
+										  display: block;
+										}
+									  
+										button {
+										  margin: 10px;
+										  padding: 8px 16px;
+										  font-size: 16px;
+										  cursor: pointer;
+										}
+									  </style>
+									  
+									  <script>
+										document.addEventListener("DOMContentLoaded", function () {
+										  const images = document.querySelectorAll(".slider img");
+										  let currentIndex = 0;
+									  
+										  // Initialize: show only the first image
+										  images[currentIndex].classList.add("active");
+									  
+										  function showImage(index) {
+											images.forEach(img => img.classList.remove("active"));
+											images[index].classList.add("active");
+										  }
+									  
+										  document.querySelector(".next").addEventListener("click", function () {
+											currentIndex = (currentIndex + 1) % images.length;
+											showImage(currentIndex);
+										  });
+									  
+										  document.querySelector(".prev").addEventListener("click", function () {
+											currentIndex = (currentIndex - 1 + images.length) % images.length;
+											showImage(currentIndex);
+										  });
+										});
+									  </script>
+									  
+								</article>
+								<article>
+									<header>
+										<span class="date">April 12, 2025</span>
+										<h2><a href="PixarFilmsAnalysis.pdf" target = "_blank">Pixar Film Data Analysis</a></h2>
+									</header>
+								
+									<a href="#" class="image fit">
+										<img src="images/pixar.webp" alt="Pixar Data Analysis Thumbnail" />
+									</a>
+								
+									<p>
+										This project analyzes a dataset of 28 Pixar films (1995–2024) using Python to explore trends in budgets, 
+										worldwide box office revenue, critic scores, seasonal release patterns, and score correlations across key 
+										indicators. Through descriptive statistics and visualizations, I identified relationships between critical 
+										reception and revenue, long-term changes in scoring, and how release timing influences box office performance.
+									</p>
+								
+									<h4>Tools & Skills Used</h4>
+									<ul>
+										<li><strong>Python:</strong> pandas, numpy, matplotlib, seaborn</li>
+										<li><strong>Data Cleaning:</strong> handling missing values, correcting zero budgets, outlier detection</li>
+										<li><strong>Statistics:</strong> summary statistics, distribution analysis, trend analysis</li>
+										<li><strong>Visualizations:</strong> scatterplots, boxplots, histograms, heatmaps, time-series graphs</li>
+										<li><strong>Correlation Analysis:</strong> critic vs audience scores, budget vs box office</li>
+									</ul>
+								
+									<ul class="actions special">
+										<li><a href="PixarFilmsAnalysis.pdf" class="button" target = "_blank">View Report</a></li>
+										<li><a href="PixarFilmsCode.ipynb" class="button">Download Code</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">December 2, 2024</span>
+										<h2><a href="Database_for_computer_game_on_Social_Engineering_COP3729_FinalProjectReport.pdf" target = "_blank">Database for computer game on Social Engineering</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/socialengineering.jpg" alt="" /></a>
+									<p>This project involved designing and implementing a relational database to support a social-engineering themed computer game. I created a full ERD, schema, and data model to track users, game levels, interactions, scoring logic, and security–related events. The project demonstrates SQL design principles, normalization, and real-world database modeling for interactive systems.</p>
+									<p>
+										<h4>Tools & Skills Used</h4>
+									<ul>
+										<li><strong>Database Design:</strong> erd, relational modeling</li>
+										<li><strong>SQL:</strong> schema creation, query writing, normalization</li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="Database_for_computer_game_on_Social_Engineering_COP3729_FinalProjectReport.pdf" class="button" target = "_blank">View Report</a></li>
+										<li><a href="Database_for_computer_game_on_social_engineering.ipynb" class="button">Download Code</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">November 23, 2024</span>
+										<h2><a href="DynamicalSystems_Project.pdf" target = "_blank">Rossler System Analysis</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/rossler.webp" alt="" /></a>
+									<p>This project explores the nonlinear behavior of the Rössler dynamical system using differential equations, numerical simulations, and phase-space analysis. I analyzed equilibria, stability, bifurcations, and long-term chaotic behavior using Python-based numerical solvers. The project demonstrates my ability to apply applied mathematics (ODEs, linearization, Jacobians, and numerical modeling) to understand and visualize complex dynamical systems.</p>
+									<h4>Tools & Skills Used</h4>
+									<ul>
+										<li><strong>Mathematics:</strong> ordinary differential equations, eigenvalues, stability analysis, bifurcation analysis</li>
+										<li><strong>Python:</strong> NumPy, SciPy, Matplotlib</li>
+										<li><strong>Modeling:</strong> trajectory simulation, phase portraits, poincaré sections</li>
+										<li><strong>Analysis:</strong> equilibrium points, jacobian computation, homoclinic bifurcation exploration</li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="DynamicalSystems_Project.pdf" class="button" target = "_blank"> View Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">November 18, 2024</span>
+										<h2><a href="Complex_Variables__Project.pdf" target = "_blank">The Dirichlet Problems</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/dirchlet.webp" alt="" /></a>
+									<p>This project applies complex analysis to solve classical Dirichlet problems in the upper half-plane and in the first quadrant. Using boundary conditions with temperature discontinuities, I constructed harmonic functions via the argument function, logarithmic potentials, and conformal maps. By expressing the solutions as imaginary parts of analytic functions, I verified harmonicity and generated visualizations of isotherms and heat-flux lines using MATLAB.</p>
+									<h4>Tools & Skills Used</h4>
+									<ul>
+										<li><strong>Mathematics:</strong> complex analysis, harmonic functions, Dirichlet problems, analytic continuation</li>
+										<li><strong>Techniques:</strong> conformal mapping, boundary value problem formulation, argument functions, logarithmic potentials</li>
+										<li><strong>Tools:</strong> MATLAB for contour plots, symbolic computation</li>
+										<li><strong>Analysis:</strong> constructing analytic functions Ω(z), verifying harmonicity, interpreting level curves (isotherms & heat flux)</li>
+										<li><strong>Visualization:</strong> contour plots of real/imaginary parts, mapping boundary discontinuities</li>
+
+									</ul>
+									<ul class="actions special">
+										<li><a href="Complex_Variables__Project.pdf" class="button" target = "_blank">View Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2024</span>
+										<h2><a href="Database Design & Develop Project.pdf" target = "_blank">Retail Store Database</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/Screenshot 2025-11-26 190352.png" alt="" /></a>
+									<p>I designed and implemented a full relational database solution for KGSB Clothing to address major operational gaps in inventory tracking, customer management, and data integrity. The project included developing an EER diagram, building a normalized schema with subtypes for product categories, creating stored procedures, inserting sample data, writing analytical queries (sales reports, inventory summaries, customer-specific invoices), and producing technical documentation and a full presentation. The final system supports real-time inventory updates, consistent customer records, streamlined order processing, and robust reporting capabilities.</p>
+									<h4>Tools & Skills Used</h4>
+									<ul>
+										<li><strong>Database Design:</strong> entity–relationship modeling, normalization (1NF–3NF), subtype/supertype structures</li>
+										<li><strong>SQL:</strong> stored procedures, complex joins, aggregate queries, date-range filtering, batch inserts</li>
+										<li><strong>Data Management:</strong> inventory tracking, customer profiling, order processing workflows</li>
+										<li><strong>Tools:</strong> MySQL Workbench, EERD diagrams, schema documentation, data dictionary creation</li>
+										<li><strong>Business Logic:</strong> inventory rules, customer–order relationships, vendor links, reporting requirements</li>
+										<li><strong>Reporting & Analysis:</strong> sales summaries, stock-level reports, customer purchase history, product-type filtering</li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="Database Design & Develop Project.pdf" class="button" target = "_blank">View Report</a></li>
 									</ul>
 								</article>
 							</section>
@@ -89,7 +274,7 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/knoelle-grassi-2a606b29a/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.linkedin.com/in/knoelle-grassi-2a606b29a/" class="icon brands alt fa-linkedin" target = "_blank"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</section>
 						</section>

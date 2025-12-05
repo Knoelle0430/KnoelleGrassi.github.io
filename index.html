@@ -54,7 +54,7 @@
 								</header>
 								<a href="#" class="image main"><img src="images/kgrassi_photo.jpg" alt="" /></a>
 								<ul class="actions special">
-									<a href="KnoelleGrassi_Resume_Nov25.pdf" class="button large" target="_blank">View Resume</a>
+									<a href="KnoelleGrassi_Resume_Dec25.pdf" class="button large" target="_blank">View Resume</a>
 								</ul>
 							</article>
 
@@ -62,35 +62,36 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">April 15, 2025</span>
-										<h2><a href="Wildlife Data Warehouse Project.pdf" target = "_blank">Wildlife Species Spatiotemporal Analysis</a></h2>
+										<span class="date">December 4, 2025</span>
+										<h2><a href="MedicalNoShowAnalysis.pdf" target = "_blank">Healthcare Appointment No-Show Analysis</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/wildlife.jfif" alt="" /></a>
+									<a href="#" class="image fit"><img src="images/noshow.webp" alt="" /></a>
 									<p>
-										This project designs and implements a complete wildlife conservation data warehouse integrating 
-										spatiotemporal species observations, environmental conditions, CITES trade records, and IUCN 
-										conservation history. I built the dimensional model, constructed transactional and snapshot fact 
-										tables, created ETL pipelines, and developed analytical marts supporting biodiversity research, 
-										species risk monitoring, and ecological trend reporting.
+										Analyzed medical appointment data to understand the drivers of patient no-shows and to build a risk-scoring framework that helps clinics prioritize interventions. The project includes Python-based data preprocessing, exploratory analysis, descriptive statistics, risk modeling, and four operational Tableau dashboards that visualize attendance patterns and high-risk groups.
 									</p>
 									<h4>Tools & Skills Used</h4>
 									<ul>
-										<li><strong>Dimensional Modeling: </strong> scds, fact tables, surrogate keys
-										<li><strong>SQL: </strong> data modeling, etl pipelines, star schemas
-										<li><strong>Visualizations:</strong> scatterplots, boxplots, histograms, heatmaps, tableau</li>
-										<li><strong>Analysis:</strong> environmental, geographic, conservation</li>
+										<li><strong>Python:</strong> pandas, numpy, matplotlib</li>
+										<li><strong>Statistical Analysis:</strong> probability analysis, chi-square tests, feature grouping</li>
+										<li><strong>Data Cleaning:</strong> handling missing values, date normalization, feature engineering</li>
+										<li><strong>Risk Modeling:</strong> custom risk score system, categorical probability modeling</li>
+										<li><strong>Visualization:</strong> bar charts, trend charts, heatmaps, Tableau dashboards</li>
+										<li><strong>Operational Insights:</strong> patient segmentation, scheduling efficiency, no-show pattern analysis</li>
 									<ul class="actions special">
-										<li><a href="Wildlife Data Warehouse Project.pdf" class="button" target = "_blank">View Report</a></li>
-										<li><a href="WildlifeEDW.twb" class="button">Download Dashboards</a></li>
+										<li><a href="MedicalNoShowAnalysis.pdf" class="button" target = "_blank">View Report</a></li>
+									</ul>
+									<ul class="actions special">
+										<li><a href="Healthcare_NoShows.twb" class="button">Download Dashboards</a></li>
+										<li><a href="Medical_NoShows.ipynb" class="button">Download Code</a></li>
 									</ul>
 									<section class="gallery">
 										<h3>Dashboards & Visualizations</h3>
 									  
 										<div class="slider">
-										  <img src="images/Screenshot 2025-11-26 174825.png" alt="Dashboard Screenshot 1"/>
-										  <img src="images/Screenshot 2025-11-26 174854.png" alt="Dashboard Screenshot 2"/>
-										  <img src="images/Screenshot 2025-11-26 174913.png" alt="Dashboard Screenshot 3"/>
-										  <img src="images/Screenshot 2025-11-26 174940.png" alt="Dashboard Screenshot 4"/>
+										  <img src="images/No-Show/Screenshot 2025-12-03 195517.png" alt="Dashboard Screenshot 1"/>
+										  <img src="images/No-Show/Screenshot 2025-12-03 200219.png" alt="Dashboard Screenshot 2"/>
+										  <img src="images/No-Show/Screenshot 2025-12-03 200738.png" alt="Dashboard Screenshot 3"/>
+										  <img src="images/No-Show/Screenshot 2025-12-03 201239.png" alt="Dashboard Screenshot 4"/>
 										</div>
 									  
 										<button class="prev">&#10094; Prev</button>
@@ -126,28 +127,134 @@
 									  
 									  <script>
 										document.addEventListener("DOMContentLoaded", function () {
-										  const images = document.querySelectorAll(".slider img");
-										  let currentIndex = 0;
-									  
-										  // Initialize: show only the first image
-										  images[currentIndex].classList.add("active");
-									  
-										  function showImage(index) {
+										// For each gallery section, create a separate slider
+										document.querySelectorAll("section.gallery").forEach(function (gallery) {
+											
+											const images = gallery.querySelectorAll(".slider img");
+											const nextBtn = gallery.querySelector(".next");
+											const prevBtn = gallery.querySelector(".prev");
+											let currentIndex = 0;
+
+											// Show the first image
+											images[currentIndex].classList.add("active");
+
+											function showImage(index) {
 											images.forEach(img => img.classList.remove("active"));
 											images[index].classList.add("active");
-										  }
-									  
-										  document.querySelector(".next").addEventListener("click", function () {
+											}
+
+											nextBtn.addEventListener("click", function () {
 											currentIndex = (currentIndex + 1) % images.length;
 											showImage(currentIndex);
-										  });
-									  
-										  document.querySelector(".prev").addEventListener("click", function () {
+											});
+
+											prevBtn.addEventListener("click", function () {
 											currentIndex = (currentIndex - 1 + images.length) % images.length;
 											showImage(currentIndex);
-										  });
+											});
+
 										});
-									  </script>
+										});
+									</script>
+
+									  
+								</article>
+								<article>
+									<header>
+										<span class="date">April 15, 2025</span>
+										<h2><a href="Wildlife Data Warehouse Project.pdf" target = "_blank">Wildlife Species Spatiotemporal Analysis</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/wildlife.jfif" alt="" /></a>
+									<p>
+										This project designs and implements a complete wildlife conservation data warehouse integrating 
+										spatiotemporal species observations, environmental conditions, CITES trade records, and IUCN 
+										conservation history. I built the dimensional model, constructed transactional and snapshot fact 
+										tables, created ETL pipelines, and developed analytical marts supporting biodiversity research, 
+										species risk monitoring, and ecological trend reporting.
+									</p>
+									<h4>Tools & Skills Used</h4>
+									<ul>
+										<li><strong>Dimensional Modeling: </strong> scds, fact tables, surrogate keys
+										<li><strong>SQL: </strong> data modeling, etl pipelines, star schemas
+										<li><strong>Visualizations:</strong> scatterplots, boxplots, histograms, heatmaps, tableau</li>
+										<li><strong>Analysis:</strong> environmental, geographic, conservation</li>
+									<ul class="actions special">
+										<li><a href="Wildlife Data Warehouse Project.pdf" class="button" target = "_blank">View Report</a></li>
+										<li><a href="WildlifeEDW.twb" class="button">Download Dashboards</a></li>
+									</ul>
+									<section class="gallery">
+										<h3>Dashboards & Visualizations</h3>
+									  
+										<div class="slider">
+										  <img src="images/Environment/Screenshot 2025-11-26 174825.png" alt="Dashboard Screenshot 1"/>
+										  <img src="images/Environment/Screenshot 2025-11-26 174854.png" alt="Dashboard Screenshot 2"/>
+										  <img src="images/Environment/Screenshot 2025-11-26 174913.png" alt="Dashboard Screenshot 3"/>
+										  <img src="images/Environment/Screenshot 2025-11-26 174940.png" alt="Dashboard Screenshot 4"/>
+										</div>
+									  
+										<button class="prev">&#10094; Prev</button>
+										<button class="next">Next &#10095;</button>
+									  </section>
+									  
+									  <style>
+										.gallery {
+										  text-align: center;
+										  max-width: 600px;
+										  margin: auto;
+										}
+									  
+										/* Hide all images by default */
+										.slider img {
+										  display: none;
+										  width: 100%;
+										  height: auto;
+										}
+									  
+										/* Show only the active image */
+										.slider img.active {
+										  display: block;
+										}
+									  
+										button {
+										  margin: 10px;
+										  padding: 8px 16px;
+										  font-size: 16px;
+										  cursor: pointer;
+										}
+									  </style>
+									  
+									  <script>
+											document.addEventListener("DOMContentLoaded", function () {
+											// For each gallery section, create a separate slider
+											document.querySelectorAll("section.gallery").forEach(function (gallery) {
+												
+												const images = gallery.querySelectorAll(".slider img");
+												const nextBtn = gallery.querySelector(".next");
+												const prevBtn = gallery.querySelector(".prev");
+												let currentIndex = 0;
+
+												// Show the first image
+												images[currentIndex].classList.add("active");
+
+												function showImage(index) {
+												images.forEach(img => img.classList.remove("active"));
+												images[index].classList.add("active");
+												}
+
+												nextBtn.addEventListener("click", function () {
+												currentIndex = (currentIndex + 1) % images.length;
+												showImage(currentIndex);
+												});
+
+												prevBtn.addEventListener("click", function () {
+												currentIndex = (currentIndex - 1 + images.length) % images.length;
+												showImage(currentIndex);
+												});
+
+											});
+											});
+										</script>
+
 									  
 								</article>
 								<article>
